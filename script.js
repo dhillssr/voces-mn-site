@@ -104,6 +104,8 @@ const T = {
     'form.note':            'We typically respond within 1–2 business days in English or Spanish.',
     'form.sending':         'Sending…',
     'form.sent':            'Message Sent!',
+    'form.success':         "Thanks! Your message has been sent. We'll get back to you within 1–2 business days.",
+    'form.error':           'Something went wrong. Please try again or email us directly.',
 
     'footer.note':           'A community-based initiative serving Latino families in the Twin Cities, Minnesota. Not yet an official nonprofit organization.',
     'footer.nav.title':      'Navigate',
@@ -217,6 +219,8 @@ const T = {
     'form.note':            'Generalmente respondemos dentro de 1–2 días hábiles en inglés o español.',
     'form.sending':         'Enviando…',
     'form.sent':            '¡Mensaje Enviado!',
+    'form.success':         'Su mensaje ha sido enviado. Nos comunicaremos con usted en 1–2 días hábiles.',
+    'form.error':           'Algo salió mal. Por favor intente de nuevo o escríbanos directamente.',
 
     'footer.note':           'Una iniciativa comunitaria que sirve a familias latinas en Twin Cities, Minnesota. Aún no es una organización sin fines de lucro oficial.',
     'footer.nav.title':      'Navegar',
@@ -319,22 +323,39 @@ document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
 /* ===== CONTACT FORM ===== */
 const form      = document.getElementById('contactForm');
 const submitBtn = document.getElementById('submitBtn');
+const formNote  = document.getElementById('formNote');
+const formError = document.getElementById('formError');
+const formSuccess = document.getElementById('formSuccess');
 
-form.addEventListener('submit', e => {
+form.addEventListener('submit', async e => {
   e.preventDefault();
+  if (!form.checkValidity()) { form.reportValidity(); return; }
+
   submitBtn.disabled = true;
+  formError.hidden = true;
   submitBtn.textContent = T[currentLang]['form.sending'];
 
-  setTimeout(() => {
-    submitBtn.textContent = T[currentLang]['form.sent'];
-    submitBtn.style.background = '#2e7d32';
-    form.reset();
-    setTimeout(() => {
+  try {
+    const res = await fetch(form.action, {
+      method: 'POST',
+      body: new FormData(form),
+      headers: { 'Accept': 'application/json' }
+    });
+
+    if (res.ok) {
+      form.hidden = true;
+      formNote.hidden = true;
+      formSuccess.hidden = false;
+    } else {
+      formError.hidden = false;
       submitBtn.textContent = T[currentLang]['form.submit'];
-      submitBtn.style.background = '';
       submitBtn.disabled = false;
-    }, 3500);
-  }, 900);
+    }
+  } catch {
+    formError.hidden = false;
+    submitBtn.textContent = T[currentLang]['form.submit'];
+    submitBtn.disabled = false;
+  }
 });
 
 /* ===== SMOOTH SCROLL (fallback) ===== */
