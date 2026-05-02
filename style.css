@@ -769,8 +769,53 @@ button { font-family: inherit; }
   margin-bottom: 16px;
 }
 .donate-content p { font-size: 1.05rem; color: rgba(255,255,255,0.8); line-height: 1.75; margin-bottom: 32px; }
-.donate-img-wrap { border-radius: var(--r-xl); overflow: hidden; box-shadow: var(--sh-xl); }
+.donate-visual { position: relative; overflow: visible; }
+.donate-img-frame { border-radius: var(--r-xl); overflow: hidden; box-shadow: var(--sh-xl); }
 .donate-img { width: 100%; height: 300px; object-fit: cover; display: block; }
+.donate-badge {
+  position: absolute;
+  background: #fff;
+  border-radius: var(--r-md);
+  padding: 14px 20px;
+  box-shadow: var(--sh-lg);
+  border: 1px solid var(--border);
+}
+.donate-badge-top    { top: 20px; right: -20px; min-width: 130px; }
+.donate-badge-bottom { bottom: 28px; left: -20px; }
+
+.donate-venmo {
+  margin-top: 28px;
+  padding: 20px 24px;
+  border: 1.5px solid rgba(255,255,255,0.28);
+  border-radius: var(--r-md);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.dvn-label {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: rgba(255,255,255,0.6);
+  margin-bottom: 4px;
+}
+.dvn-handle {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #fff;
+}
+.dvn-qr-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+  width: 72px;
+  color: rgba(255,255,255,0.5);
+  font-size: 0.68rem;
+  text-align: center;
+}
+.dvn-qr-placeholder svg { width: 44px; height: 44px; opacity: 0.5; }
 
 /* ===== CONTACT ===== */
 .contact-section { padding: 120px 0; background: var(--bg-white); }
@@ -943,7 +988,7 @@ button { font-family: inherit; }
   .team-grid { grid-template-columns: 1fr; }
   .hero-btns { flex-direction: column; }
   .hero-btns .btn { width: 100%; }
-  .hv-card-top, .hv-card-bottom { display: none; }
+  .hv-card-top, .hv-card-bottom, .donate-badge { display: none; }
   .donate-inner { padding: 32px 24px; }
   .contact-form-col .contact-form { padding: 28px 24px; }
   .volunteers-wrap { padding: 24px 20px; }

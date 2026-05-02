@@ -10,7 +10,7 @@ const T = {
 
     'hero.pill':           'Serving Latinos in the Twin Cities, MN',
     'hero.title':          'Empowering<br><em>Our Community</em>',
-    'hero.sub':            'VOCES connects Latino families in Minnesota with the health, legal, and housing resources they need — with dignity, care, and purpose.',
+    'hero.sub':            'VOCES connects Latino families in Minnesota with the resources, guidance, and community they need — with dignity, care, and purpose.',
     'hero.btn1':           'Explore Our Services',
     'hero.btn2':           'Get Help Today',
     'hero.card.families':  'Families Served',
@@ -76,10 +76,12 @@ const T = {
     'resources.link.learn':   'Learn more →',
     'resources.link.connect': 'Get connected →',
 
-    'donate.tag':  'Support Our Work',
-    'donate.title':'Help Us Grow<br>Our Impact',
-    'donate.desc': 'VOCES is a volunteer-driven community initiative. Your support helps us expand our services, reach more families, and build a stronger community for everyone in the Twin Cities.',
-    'donate.btn':  'Make a Donation',
+    'donate.tag':        'Support Our Work',
+    'donate.title':      'Help Us Grow<br>Our Impact',
+    'donate.desc':       'VOCES is a volunteer-driven community initiative. Your support helps us expand our services, reach more families, and build a stronger community for everyone in the Twin Cities.',
+    'donate.btn':        'Make a Donation',
+    'donate.venmo.label':'Donate via Venmo',
+    'donate.venmo.soon': 'QR code coming soon',
 
     'contact.tag':        'Get In Touch',
     'contact.title':      "We're Here<br>to Help",
@@ -121,7 +123,7 @@ const T = {
 
     'hero.pill':           'Sirviendo a Latinos en Twin Cities, MN',
     'hero.title':          'Empoderando<br><em>Nuestra Comunidad</em>',
-    'hero.sub':            'VOCES conecta a las familias latinas en Minnesota con los recursos de salud, legales y de vivienda que necesitan — con dignidad, cuidado y propósito.',
+    'hero.sub':            'VOCES conecta a las familias latinas en Minnesota con los recursos, orientación y comunidad que necesitan — con dignidad, cuidado y propósito.',
     'hero.btn1':           'Explorar Nuestros Servicios',
     'hero.btn2':           'Obtener Ayuda Hoy',
     'hero.card.families':  'Familias Atendidas',
@@ -187,10 +189,12 @@ const T = {
     'resources.link.learn':   'Saber más →',
     'resources.link.connect': 'Conectarse →',
 
-    'donate.tag':  'Apoye Nuestro Trabajo',
-    'donate.title':'Ayúdenos a Crecer<br>Nuestro Impacto',
-    'donate.desc': 'VOCES es una iniciativa comunitaria impulsada por voluntarios. Su apoyo nos ayuda a ampliar nuestros servicios, llegar a más familias y construir una comunidad más fuerte para todos en Twin Cities.',
-    'donate.btn':  'Hacer una Donación',
+    'donate.tag':        'Apoye Nuestro Trabajo',
+    'donate.title':      'Ayúdenos a Crecer<br>Nuestro Impacto',
+    'donate.desc':       'VOCES es una iniciativa comunitaria impulsada por voluntarios. Su apoyo nos ayuda a ampliar nuestros servicios, llegar a más familias y construir una comunidad más fuerte para todos en Twin Cities.',
+    'donate.btn':        'Hacer una Donación',
+    'donate.venmo.label':'Donar por Venmo',
+    'donate.venmo.soon': 'Código QR próximamente',
 
     'contact.tag':        'Contáctenos',
     'contact.title':      'Estamos Aquí<br>para Ayudar',
