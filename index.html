@@ -18,23 +18,30 @@
       <a href="#home" class="nav-logo">
         <span class="logo-v">VOCES</span><span class="logo-mn">MN</span>
       </a>
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-      <ul class="nav-links" id="navLinks">
-        <li><a href="#about"     class="nav-link">About</a></li>
-        <li><a href="#services"  class="nav-link">Services</a></li>
-        <li><a href="#team"      class="nav-link">Team</a></li>
-        <li><a href="#resources" class="nav-link">Resources</a></li>
-        <li><a href="#contact"   class="nav-link">Contact</a></li>
-        <li><a href="#donate"    class="nav-link nav-cta">Donate</a></li>
-      </ul>
+      <div class="nav-end">
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#about"     class="nav-link" data-i18n="nav.about">About</a></li>
+          <li><a href="#services"  class="nav-link" data-i18n="nav.services">Services</a></li>
+          <li><a href="#team"      class="nav-link" data-i18n="nav.team">Team</a></li>
+          <li><a href="#resources" class="nav-link" data-i18n="nav.resources">Resources</a></li>
+          <li><a href="#contact"   class="nav-link" data-i18n="nav.contact">Contact</a></li>
+          <li><a href="#donate"    class="nav-link nav-cta" data-i18n="nav.donate">Donate</a></li>
+        </ul>
+        <button class="lang-btn" id="langBtn" aria-label="Cambiar a Español">
+          <span class="lb-active" id="lbActive">EN</span>
+          <span class="lb-sep">|</span>
+          <span class="lb-inactive" id="lbInactive">ES</span>
+        </button>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </nav>
   </header>
 
   <main>
 
-    <!-- ========== HERO ========== -->
+    <!-- HERO -->
     <section id="home" class="hero">
       <div class="hero-bg-shapes" aria-hidden="true">
         <div class="hbs hbs-1"></div>
@@ -45,38 +52,38 @@
         <div class="hero-copy">
           <div class="hero-pill">
             <span class="pill-dot"></span>
-            Serving Latinos in the Twin Cities, MN
+            <span data-i18n="hero.pill">Serving Latinos in the Twin Cities, MN</span>
           </div>
-          <h1 class="hero-title">
+          <h1 class="hero-title" data-i18n-html="hero.title">
             Empowering<br><em>Our Community</em>
           </h1>
-          <p class="hero-sub">
+          <p class="hero-sub" data-i18n="hero.sub">
             VOCES connects Latino families in Minnesota with the health,
             legal, and housing resources they need — with dignity, care, and purpose.
           </p>
           <div class="hero-btns">
-            <a href="#services" class="btn btn-primary">Explore Our Services</a>
-            <a href="#contact"  class="btn btn-outline-dark">Get Help Today</a>
+            <a href="#services" class="btn btn-primary" data-i18n="hero.btn1">Explore Our Services</a>
+            <a href="#contact"  class="btn btn-outline-dark" data-i18n="hero.btn2">Get Help Today</a>
           </div>
         </div>
 
         <div class="hero-visual">
           <div class="hv-wrap">
             <img
-              src="https://picsum.photos/seed/vocesmn-hero/560/600"
+              src="images/donate-community.jpg"
               alt="Latino community members together"
               class="hv-photo"
               loading="eager"
             >
             <div class="hv-card hv-card-top">
               <div class="hvc-num">500+</div>
-              <div class="hvc-label">Families Served</div>
+              <div class="hvc-label" data-i18n="hero.card.families">Families Served</div>
             </div>
             <div class="hv-card hv-card-bottom">
               <div class="hvc-lang">
                 <span class="lang-flag">🌎</span>
                 <div>
-                  <div class="hvc-num-sm">Bilingual</div>
+                  <div class="hvc-num-sm" data-i18n="hero.card.bilingual">Bilingual</div>
                   <div class="hvc-label">English &amp; Español</div>
                 </div>
               </div>
@@ -87,79 +94,78 @@
       </div>
     </section>
 
-    <!-- ========== STATS STRIP ========== -->
+    <!-- STATS STRIP -->
     <div class="stats-strip">
       <div class="container stats-inner">
         <div class="stat-item">
           <span class="si-n">500+</span>
-          <span class="si-l">Families Served</span>
+          <span class="si-l" data-i18n="stats.families">Families Served</span>
         </div>
         <div class="stat-divider"></div>
         <div class="stat-item">
-          <span class="si-n">4</span>
-          <span class="si-l">Core Services</span>
+          <span class="si-n">3</span>
+          <span class="si-l" data-i18n="stats.services">Core Services</span>
         </div>
         <div class="stat-divider"></div>
         <div class="stat-item">
           <span class="si-n">100%</span>
-          <span class="si-l">Community-Driven</span>
+          <span class="si-l" data-i18n="stats.community">Community-Driven</span>
         </div>
         <div class="stat-divider"></div>
         <div class="stat-item">
           <span class="si-n">2</span>
-          <span class="si-l">Languages Served</span>
+          <span class="si-l" data-i18n="stats.languages">Languages Served</span>
         </div>
       </div>
     </div>
 
-    <!-- ========== VALUES ========== -->
+    <!-- VALUES -->
     <section class="values-section">
       <div class="container">
         <div class="sec-header center">
-          <p class="sec-tag">Our Name, Our Purpose</p>
-          <h2 class="sec-title">What <em>VOCES</em> Stands For</h2>
+          <p class="sec-tag" data-i18n="values.tag">Our Name, Our Purpose</p>
+          <h2 class="sec-title" data-i18n-html="values.title">What <em>VOCES</em> Stands For</h2>
         </div>
         <div class="values-grid">
           <div class="vcard reveal">
             <div class="vcard-letter">V</div>
             <h3>Valor</h3>
-            <p>The courage to advocate fiercely for our community's dignity and rights</p>
+            <p data-i18n="values.v">The courage to advocate fiercely for our community's dignity and rights</p>
           </div>
           <div class="vcard reveal">
             <div class="vcard-letter">O</div>
             <h3>Orientación</h3>
-            <p>Guidance through complex systems — health, housing, legal, and beyond</p>
+            <p data-i18n="values.o">Guidance through complex systems — health, housing, legal, and beyond</p>
           </div>
           <div class="vcard reveal">
             <div class="vcard-letter">C</div>
             <h3>Comunidad</h3>
-            <p>Building lasting bonds of trust, belonging, and mutual support</p>
+            <p data-i18n="values.c">Building lasting bonds of trust, belonging, and mutual support</p>
           </div>
           <div class="vcard reveal">
             <div class="vcard-letter">E</div>
             <h3>Emprendimiento</h3>
-            <p>Fostering entrepreneurship and independence for sustainable futures</p>
+            <p data-i18n="values.e">Fostering entrepreneurship and independence for sustainable futures</p>
           </div>
           <div class="vcard reveal">
             <div class="vcard-letter">S</div>
             <h3>Servicio</h3>
-            <p>Dedicated, personalized service to every individual and family we meet</p>
+            <p data-i18n="values.s">Dedicated, personalized service to every individual and family we meet</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ========== ABOUT ========== -->
+    <!-- ABOUT -->
     <section id="about" class="about-section">
       <div class="container">
         <div class="about-grid">
 
-          <!-- Visual: photo + floating quote card -->
           <div class="about-visual reveal">
             <div class="about-img-stack">
               <div class="about-img-frame">
                 <img
-                  src="https://picsum.photos/seed/vocesmn-about/520/440"
+                  src="images/about-community.jpg"
                   alt="VOCES community members"
                   class="about-photo"
                   loading="lazy"
@@ -167,8 +173,8 @@
               </div>
               <div class="about-float-card">
                 <div class="afc-quote">&ldquo;</div>
-                <p>Everyone deserves dignity and security — regardless of where they come from.</p>
-                <cite>— VOCES Mission</cite>
+                <p data-i18n="about.quote">Everyone deserves dignity and security — regardless of where they come from.</p>
+                <cite data-i18n="about.cite">— VOCES Mission</cite>
               </div>
               <div class="about-img-badge">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
@@ -177,17 +183,16 @@
             </div>
           </div>
 
-          <!-- Text content -->
           <div class="about-content">
-            <p class="sec-tag">Our Mission</p>
-            <h2 class="sec-title">Building a Path to a Better Future</h2>
-            <p class="about-text">
+            <p class="sec-tag" data-i18n="about.tag">Our Mission</p>
+            <h2 class="sec-title" data-i18n="about.title">Building a Path to a Better Future</h2>
+            <p class="about-text" data-i18n="about.p1">
               VOCES is a community-based initiative dedicated to empowering Latino families
               in the Twin Cities. We believe every person — regardless of background or
               status — deserves access to the resources, guidance, and support they need
               to build a stable and fulfilling life.
             </p>
-            <p class="about-text">
+            <p class="about-text" data-i18n="about.p2">
               We are a small group of passionate individuals committed to building with
               purpose and intention, providing specialized services to help our community
               overcome barriers and take the next step toward a better future.
@@ -198,8 +203,8 @@
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
                 </div>
                 <div>
-                  <h4>Community-Centered</h4>
-                  <p>Every decision made with our community's well-being at the center</p>
+                  <h4 data-i18n="about.pillar1.title">Community-Centered</h4>
+                  <p data-i18n="about.pillar1.desc">Every decision made with our community's well-being at the center</p>
                 </div>
               </div>
               <div class="pillar">
@@ -207,8 +212,8 @@
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
                 </div>
                 <div>
-                  <h4>Safe &amp; Confidential</h4>
-                  <p>Your privacy and safety are our highest priority at every step</p>
+                  <h4 data-i18n="about.pillar2.title">Safe &amp; Confidential</h4>
+                  <p data-i18n="about.pillar2.desc">Your privacy and safety are our highest priority at every step</p>
                 </div>
               </div>
               <div class="pillar">
@@ -216,8 +221,8 @@
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
                 </div>
                 <div>
-                  <h4>Bilingual Support</h4>
-                  <p>All services available in both English and Spanish</p>
+                  <h4 data-i18n="about.pillar3.title">Bilingual Support</h4>
+                  <p data-i18n="about.pillar3.desc">All services available in both English and Spanish</p>
                 </div>
               </div>
             </div>
@@ -227,74 +232,65 @@
       </div>
     </section>
 
-    <!-- ========== SERVICES ========== -->
+    <!-- SERVICES -->
     <section id="services" class="services-section">
       <div class="container">
         <div class="sec-header center">
-          <p class="sec-tag">What We Offer</p>
-          <h2 class="sec-title">Our Services</h2>
-          <p class="sec-desc">Specialized support across four key areas to help you and your family navigate complex systems with confidence.</p>
+          <p class="sec-tag" data-i18n="services.tag">What We Offer</p>
+          <h2 class="sec-title" data-i18n="services.title">Our Services</h2>
+          <p class="sec-desc" data-i18n="services.desc">Specialized support across four key areas to help you and your family navigate complex systems with confidence.</p>
         </div>
         <div class="services-grid">
           <div class="svc-card reveal">
             <div class="svc-icon red">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
             </div>
-            <h3>Health Insurance Guidance</h3>
-            <p>Navigate MNsure, Medicaid, and Minnesota's healthcare options. We help you find coverage that fits your family's needs and budget.</p>
-            <a href="#contact" class="svc-link">Get help <span aria-hidden="true">→</span></a>
+            <h3 data-i18n="services.s1.title">Health Insurance Guidance</h3>
+            <p data-i18n="services.s1.desc">Navigate MNsure, Medicaid, and Minnesota's healthcare options. We help you find coverage that fits your family's needs and budget.</p>
+            <a href="#contact" class="svc-link" data-i18n="services.link">Get help →</a>
           </div>
           <div class="svc-card reveal">
             <div class="svc-icon amber">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/></svg>
             </div>
-            <h3>Legal Support</h3>
-            <p>Know your rights. We provide information on immigration procedures and connect you with trusted attorneys and legal aid in our network.</p>
-            <a href="#contact" class="svc-link">Get help <span aria-hidden="true">→</span></a>
+            <h3 data-i18n="services.s2.title">Legal Support</h3>
+            <p data-i18n="services.s2.desc">Know your rights. We provide information on immigration procedures and connect you with trusted attorneys and legal aid in our network.</p>
+            <a href="#contact" class="svc-link" data-i18n="services.link">Get help →</a>
           </div>
-          <div class="svc-card reveal">
-            <div class="svc-icon teal">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-            </div>
-            <h3>Housing Navigation</h3>
-            <p>Find stable housing, understand your tenant rights, and access emergency assistance programs with step-by-step guidance.</p>
-            <a href="#contact" class="svc-link">Get help <span aria-hidden="true">→</span></a>
-          </div>
-          <div class="svc-card reveal">
+<div class="svc-card reveal">
             <div class="svc-icon rose">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
             </div>
-            <h3>Community Assistance</h3>
-            <p>Connect with local resources — food assistance, educational opportunities, and community programs designed for the Latino community.</p>
-            <a href="#contact" class="svc-link">Get help <span aria-hidden="true">→</span></a>
+            <h3 data-i18n="services.s4.title">Community Assistance</h3>
+            <p data-i18n="services.s4.desc">Connect with local resources — food assistance, educational opportunities, and community programs designed for the Latino community.</p>
+            <a href="#contact" class="svc-link" data-i18n="services.link">Get help →</a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ========== TEAM ========== -->
+    <!-- TEAM -->
     <section id="team" class="team-section">
       <div class="container">
         <div class="sec-header center">
-          <p class="sec-tag">Our People</p>
-          <h2 class="sec-title">Meet the Team</h2>
-          <p class="sec-desc">A dedicated group of passionate individuals committed to serving our community with purpose and care.</p>
+          <p class="sec-tag" data-i18n="team.tag">Our People</p>
+          <h2 class="sec-title" data-i18n="team.title">Meet the Team</h2>
+          <p class="sec-desc" data-i18n="team.desc">A dedicated group of passionate individuals committed to serving our community with purpose and care.</p>
         </div>
 
-        <!-- Featured founder -->
         <div class="team-featured reveal">
           <div class="tf-photo-wrap">
             <img
-              src="https://i.pravatar.cc/300?img=52"
+              src="images/team-ivan-perete.png"
               alt="Ivan Perete Nieto"
               class="tf-photo"
               loading="lazy"
             >
           </div>
           <div class="tf-content">
-            <p class="tf-role">Founder &amp; Community Health Care Worker</p>
+            <p class="tf-role" data-i18n="team.ivan.role">Founder &amp; Community Health Care Worker</p>
             <h3>Ivan Perete Nieto, CCHW</h3>
-            <p class="tf-bio">
+            <p class="tf-bio" data-i18n="team.ivan.bio">
               Ivan founded VOCES with a commitment to breaking down barriers for Latino families
               in the Twin Cities. As a certified Community Health Care Worker, he leads the
               organization's mission to provide dignified, expert support to those who need it most.
@@ -312,41 +308,39 @@
           </div>
         </div>
 
-        <!-- Team grid -->
         <div class="team-grid">
           <div class="team-card reveal">
             <div class="tc-photo-wrap">
-              <img src="https://i.pravatar.cc/200?img=47" alt="Itzel Torres" class="tc-photo" loading="lazy">
+              <img src="images/team-itzel-torres.jpg" alt="Itzel Torres" class="tc-photo" loading="lazy">
             </div>
             <h4>Itzel Torres</h4>
-            <p class="tc-role">Strategic Operations Coordinator</p>
+            <p class="tc-role" data-i18n="team.itzel.role">Strategic Operations Coordinator</p>
           </div>
           <div class="team-card reveal">
             <div class="tc-photo-wrap">
-              <img src="https://i.pravatar.cc/200?img=39" alt="Brenda S." class="tc-photo" loading="lazy">
+              <img src="images/team-brenda-s.jpg" alt="Brenda S." class="tc-photo" loading="lazy">
             </div>
             <h4>Brenda S.</h4>
-            <p class="tc-role">Volunteer Operations Lead</p>
+            <p class="tc-role" data-i18n="team.brenda.role">Volunteer Operations Lead</p>
           </div>
           <div class="team-card reveal">
             <div class="tc-photo-wrap">
-              <img src="https://i.pravatar.cc/200?img=25" alt="Yndra Aguilar Chavez" class="tc-photo" loading="lazy">
+              <img src="images/team-yndra-aguilar.jpg" alt="Yndra Aguilar Chavez" class="tc-photo" loading="lazy">
             </div>
             <h4>Yndra Aguilar Chavez</h4>
-            <p class="tc-role">Family Support Coordinator</p>
+            <p class="tc-role" data-i18n="team.yndra.role">Family Support Coordinator</p>
           </div>
           <div class="team-card reveal">
             <div class="tc-photo-wrap">
-              <img src="https://i.pravatar.cc/200?img=53" alt="Dani Bonfil" class="tc-photo" loading="lazy">
+              <img src="images/team-dani-bonfil.jpg" alt="Dani Bonfil" class="tc-photo" loading="lazy">
             </div>
             <h4>Dani Bonfil</h4>
-            <p class="tc-role">Communications &amp; Engagement</p>
+            <p class="tc-role" data-i18n="team.dani.role">Communications &amp; Engagement</p>
           </div>
         </div>
 
-        <!-- Volunteers -->
         <div class="volunteers-wrap reveal">
-          <h3>Our Volunteers</h3>
+          <h3 data-i18n="team.volunteers.title">Our Volunteers</h3>
           <div class="volunteers-chips">
             <span>Isabel Lopez</span>
             <span>Estafani Huerta</span>
@@ -361,56 +355,56 @@
       </div>
     </section>
 
-    <!-- ========== RESOURCES ========== -->
+    <!-- RESOURCES -->
     <section id="resources" class="resources-section">
       <div class="container">
         <div class="sec-header center">
-          <p class="sec-tag">Know Your Rights</p>
-          <h2 class="sec-title">Resources for Families</h2>
-          <p class="sec-desc">Important information to keep you informed, protected, and connected to your community.</p>
+          <p class="sec-tag" data-i18n="resources.tag">Know Your Rights</p>
+          <h2 class="sec-title" data-i18n="resources.title">Resources for Families</h2>
+          <p class="sec-desc" data-i18n="resources.desc">Important information to keep you informed, protected, and connected to your community.</p>
         </div>
         <div class="resources-grid">
           <div class="res-card reveal">
             <div class="res-icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
             </div>
-            <h3>Detention Procedures</h3>
-            <p>Understand what to do if you or a family member is detained — your rights and the immediate steps to take.</p>
-            <a href="#contact" class="res-link">Learn more →</a>
+            <h3 data-i18n="resources.r1.title">Detention Procedures</h3>
+            <p data-i18n="resources.r1.desc">Understand what to do if you or a family member is detained — your rights and the immediate steps to take.</p>
+            <a href="#contact" class="res-link" data-i18n="resources.link.learn">Learn more →</a>
           </div>
           <div class="res-card reveal">
             <div class="res-icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
             </div>
-            <h3>Immigrant Rights</h3>
-            <p>Know your constitutional rights in the United States — regardless of your immigration status or background.</p>
-            <a href="#contact" class="res-link">Learn more →</a>
+            <h3 data-i18n="resources.r2.title">Immigrant Rights</h3>
+            <p data-i18n="resources.r2.desc">Know your constitutional rights in the United States — regardless of your immigration status or background.</p>
+            <a href="#contact" class="res-link" data-i18n="resources.link.learn">Learn more →</a>
           </div>
           <div class="res-card reveal">
             <div class="res-icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.65 3.57 2 2 0 0 1 3.62 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.73a16 16 0 0 0 5.6 5.6l.91-.91a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21 15.92z"/></svg>
             </div>
-            <h3>Attorney Connections</h3>
-            <p>Connect with trusted immigration attorneys and legal aid organizations serving our community at low or no cost.</p>
-            <a href="#contact" class="res-link">Get connected →</a>
+            <h3 data-i18n="resources.r3.title">Attorney Connections</h3>
+            <p data-i18n="resources.r3.desc">Connect with trusted immigration attorneys and legal aid organizations serving our community at low or no cost.</p>
+            <a href="#contact" class="res-link" data-i18n="resources.link.connect">Get connected →</a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ========== DONATE ========== -->
+    <!-- DONATE -->
     <section id="donate" class="donate-section">
       <div class="container">
         <div class="donate-inner reveal">
           <div class="donate-content">
-            <p class="sec-tag light">Support Our Work</p>
-            <h2>Help Us Grow<br>Our Impact</h2>
-            <p>VOCES is a volunteer-driven community initiative. Your support helps us expand our services, reach more families, and build a stronger community for everyone in the Twin Cities.</p>
-            <a href="mailto:ivanperete@vocesmn.org?subject=Donation%20Inquiry" class="btn btn-white">Make a Donation</a>
+            <p class="sec-tag light" data-i18n="donate.tag">Support Our Work</p>
+            <h2 data-i18n-html="donate.title">Help Us Grow<br>Our Impact</h2>
+            <p data-i18n="donate.desc">VOCES is a volunteer-driven community initiative. Your support helps us expand our services, reach more families, and build a stronger community for everyone in the Twin Cities.</p>
+            <a href="mailto:ivanperete@vocesmn.org?subject=Donation%20Inquiry" class="btn btn-white" data-i18n="donate.btn">Make a Donation</a>
           </div>
           <div class="donate-img-wrap">
             <img
-              src="https://picsum.photos/seed/vocesmn-donate/480/380"
+              src="images/donate-impact.jpg"
               alt="Community togetherness"
               class="donate-img"
               loading="lazy"
@@ -420,21 +414,21 @@
       </div>
     </section>
 
-    <!-- ========== CONTACT ========== -->
+    <!-- CONTACT -->
     <section id="contact" class="contact-section">
       <div class="container">
         <div class="contact-grid">
           <div class="contact-info">
-            <p class="sec-tag">Get In Touch</p>
-            <h2 class="sec-title">We're Here<br>to Help</h2>
-            <p class="contact-intro">Reach out for questions about our services, resources, or how to get involved. We respond in English and Spanish.</p>
+            <p class="sec-tag" data-i18n="contact.tag">Get In Touch</p>
+            <h2 class="sec-title" data-i18n-html="contact.title">We're Here<br>to Help</h2>
+            <p class="contact-intro" data-i18n="contact.intro">Reach out for questions about our services, resources, or how to get involved. We respond in English and Spanish.</p>
             <div class="contact-items">
               <div class="contact-item">
                 <div class="ci-icon">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
                 </div>
                 <div>
-                  <p class="ci-label">Email</p>
+                  <p class="ci-label" data-i18n="contact.email.label">Email</p>
                   <a href="mailto:ivanperete@vocesmn.org">ivanperete@vocesmn.org</a>
                 </div>
               </div>
@@ -443,7 +437,7 @@
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.65 3.57 2 2 0 0 1 3.62 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.73a16 16 0 0 0 5.6 5.6l.91-.91a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21 15.92z"/></svg>
                 </div>
                 <div>
-                  <p class="ci-label">Phone</p>
+                  <p class="ci-label" data-i18n="contact.phone.label">Phone</p>
                   <a href="tel:+16514774001">(651) 477-4001</a>
                 </div>
               </div>
@@ -452,7 +446,7 @@
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
                 </div>
                 <div>
-                  <p class="ci-label">Service Area</p>
+                  <p class="ci-label" data-i18n="contact.area.label">Service Area</p>
                   <p>Twin Cities, Minnesota</p>
                 </div>
               </div>
@@ -461,34 +455,36 @@
           <div class="contact-form-col">
             <form class="contact-form" id="contactForm" novalidate>
               <div class="fg">
-                <label for="name">Full Name</label>
-                <input type="text" id="name" name="name" placeholder="Your name" required>
+                <label for="name" data-i18n="form.name.label">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name" data-i18n-ph="form.name.ph" required>
               </div>
               <div class="fg">
-                <label for="email">Email Address</label>
+                <label for="email" data-i18n="form.email.label">Email Address</label>
                 <input type="email" id="email" name="email" placeholder="your@email.com" required>
               </div>
               <div class="fg">
-                <label for="phone">Phone <span class="opt">(optional)</span></label>
+                <label for="phone">
+                  <span data-i18n="form.phone.label">Phone</span>
+                  <span class="opt" data-i18n="form.optional">(optional)</span>
+                </label>
                 <input type="tel" id="phone" name="phone" placeholder="(612) 555-0000">
               </div>
               <div class="fg">
-                <label for="service">Service Needed</label>
+                <label for="service" data-i18n="form.service.label">Service Needed</label>
                 <select id="service" name="service">
-                  <option value="">Select a service…</option>
-                  <option value="health">Health Insurance Guidance</option>
-                  <option value="legal">Legal Support</option>
-                  <option value="housing">Housing Navigation</option>
-                  <option value="community">Community Assistance</option>
-                  <option value="other">Other / General Inquiry</option>
+                  <option value=""       data-i18n="form.service.default">Select a service…</option>
+                  <option value="health" data-i18n="services.s1.title">Health Insurance Guidance</option>
+                  <option value="legal"  data-i18n="services.s2.title">Legal Support</option>
+                  <option value="community" data-i18n="services.s4.title">Community Assistance</option>
+                  <option value="other"  data-i18n="form.service.other">Other / General Inquiry</option>
                 </select>
               </div>
               <div class="fg">
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="4" placeholder="How can we help you?"></textarea>
+                <label for="message" data-i18n="form.message.label">Message</label>
+                <textarea id="message" name="message" rows="4" placeholder="How can we help you?" data-i18n-ph="form.message.ph"></textarea>
               </div>
-              <button type="submit" class="btn btn-primary full" id="submitBtn">Send Message</button>
-              <p class="form-note">We typically respond within 1–2 business days in English or Spanish.</p>
+              <button type="submit" class="btn btn-primary full" id="submitBtn" data-i18n="form.submit">Send Message</button>
+              <p class="form-note" data-i18n="form.note">We typically respond within 1–2 business days in English or Spanish.</p>
             </form>
           </div>
         </div>
@@ -506,37 +502,36 @@
             <span class="logo-v footer-logo-v">VOCES</span><span class="logo-mn">MN</span>
           </a>
           <p class="footer-tagline">Valor · Orientación · Comunidad · Emprendimiento · Servicio</p>
-          <p class="footer-note">A community-based initiative serving Latino families in the Twin Cities, Minnesota. Not yet an official nonprofit organization.</p>
+          <p class="footer-note" data-i18n="footer.note">A community-based initiative serving Latino families in the Twin Cities, Minnesota. Not yet an official nonprofit organization.</p>
         </div>
         <div class="footer-col">
-          <h4>Navigate</h4>
+          <h4 data-i18n="footer.nav.title">Navigate</h4>
           <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#team">Team</a></li>
-            <li><a href="#resources">Resources</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about"     data-i18n="nav.about">About</a></li>
+            <li><a href="#services"  data-i18n="nav.services">Services</a></li>
+            <li><a href="#team"      data-i18n="nav.team">Team</a></li>
+            <li><a href="#resources" data-i18n="nav.resources">Resources</a></li>
+            <li><a href="#contact"   data-i18n="nav.contact">Contact</a></li>
           </ul>
         </div>
         <div class="footer-col">
-          <h4>Services</h4>
+          <h4 data-i18n="footer.services.title">Services</h4>
           <ul>
-            <li><a href="#services">Health Insurance</a></li>
-            <li><a href="#services">Legal Support</a></li>
-            <li><a href="#services">Housing Navigation</a></li>
-            <li><a href="#services">Community Assistance</a></li>
+            <li><a href="#services" data-i18n="footer.health">Health Insurance</a></li>
+            <li><a href="#services" data-i18n="services.s2.title">Legal Support</a></li>
+            <li><a href="#services" data-i18n="services.s4.title">Community Assistance</a></li>
           </ul>
         </div>
         <div class="footer-col">
-          <h4>Contact</h4>
+          <h4 data-i18n="footer.contact.title">Contact</h4>
           <a href="mailto:ivanperete@vocesmn.org" class="footer-link">ivanperete@vocesmn.org</a>
           <a href="tel:+16514774001" class="footer-link">(651) 477-4001</a>
           <p class="footer-link-text">Twin Cities, Minnesota</p>
-          <a href="#donate" class="footer-donate-btn">Donate</a>
+          <a href="#donate" class="footer-donate-btn" data-i18n="nav.donate">Donate</a>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>© 2024 VOCES MN. All rights reserved.</p>
+        <p data-i18n="footer.copyright">© 2025 VOCES MN. All rights reserved.</p>
       </div>
     </div>
   </footer>
