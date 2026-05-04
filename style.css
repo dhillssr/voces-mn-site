@@ -735,6 +735,57 @@ button { font-family: inherit; }
 }
 .res-link:hover { opacity: 0.7; }
 
+/* ===== EVENTS ===== */
+.events-section { padding: 120px 0; background: var(--bg-white); }
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  max-width: 860px;
+  margin: 0 auto;
+}
+.event-card {
+  display: flex;
+  gap: 28px;
+  align-items: flex-start;
+  background: var(--bg-warm);
+  border: 1.5px solid var(--border);
+  border-radius: var(--r-lg);
+  padding: 36px;
+  transition: transform var(--dur) var(--ease), box-shadow var(--dur);
+}
+.event-card:hover { transform: translateY(-4px); box-shadow: var(--sh-lg); }
+.event-month {
+  flex-shrink: 0;
+  width: 60px;
+  height: 60px;
+  border-radius: var(--r-md);
+  background: var(--red);
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.event-body { flex: 1; }
+.event-badge {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--amber-dark);
+  background: var(--amber-tint);
+  border-radius: 99px;
+  padding: 3px 10px;
+  margin-bottom: 10px;
+}
+.event-title { font-family: var(--font-head); font-size: 1.2rem; color: var(--text); margin-bottom: 8px; }
+.event-desc { font-size: 0.92rem; color: var(--text-mid); line-height: 1.7; margin-bottom: 16px; }
+
 /* ===== DONATE ===== */
 .donate-section { padding: 100px 0; background: var(--red); position: relative; overflow: hidden; }
 .donate-section::before {
@@ -978,6 +1029,7 @@ button { font-family: inherit; }
   .contact-info { position: static; }
   .team-grid { grid-template-columns: repeat(2, 1fr); }
   .resources-grid { grid-template-columns: 1fr 1fr; }
+  .events-grid { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 768px) {
