@@ -212,12 +212,12 @@ button { font-family: inherit; }
   text-decoration: none;
 }
 .logo-img {
-  height: 44px;
+  height: 140px;
   width: auto;
   display: block;
 }
 .logo-img-footer {
-  height: 48px;
+  height: 140px;
   filter: brightness(0) invert(1);
 }
 
