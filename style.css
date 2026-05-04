@@ -557,7 +557,7 @@ button { font-family: inherit; }
 .services-section { padding: 120px 0; background: var(--bg-warm); }
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
 .svc-card {
