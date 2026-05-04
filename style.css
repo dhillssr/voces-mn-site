@@ -893,6 +893,7 @@ button { font-family: inherit; }
   padding: 48px 32px;
   text-align: center;
 }
+.form-success[hidden] { display: none; }
 .form-success-icon {
   width: 56px;
   height: 56px;
